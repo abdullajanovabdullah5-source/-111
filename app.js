@@ -8,7 +8,7 @@ const wallpaperPatterns = [
     region: "Narin",
     regionId: "path-naryn",
     desc: "Shirdoq — qirg'iz kigizchilik san'atining eng yorqin namunasidir. Uning naqshlari suv, ulug'vor tog'lar va o't-o'lanlarni ifodalaydi. Klassik jigarrang va oltin elementlar xonadonda milliy o'ziga xoslik va iliqlik muhitini yaratadi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><rect width='80' height='80' fill='%2325160c'/><path d='M40 0 L80 40 L40 80 L0 40 Z' fill='none' stroke='%23e5c158' stroke-width='2'/><path d='M40 10 Q30 25 40 40 Q50 25 40 10 Z M40 70 Q30 55 40 40 Q50 55 40 70 Z M10 40 Q25 30 40 40 Q25 50 10 40 Z M70 40 Q55 30 40 40 Q55 50 70 40 Z' fill='none' stroke='%23cd7f32' stroke-width='1.5'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><rect width='120' height='120' fill='%23190e06'/><path d='M60 5 L115 60 L60 115 L5 60 Z' fill='%233a1e12' stroke='%23e5c158' stroke-width='3' stroke-linejoin='round'/><path d='M60 25 C50 25 40 35 40 45 C40 52 48 55 52 50 C55 45 50 38 45 40 C43 41 43 45 45 45' fill='none' stroke='%23cd7f32' stroke-width='2.5' stroke-linecap='round'/><path d='M60 25 C70 25 80 35 80 45 C80 52 72 55 68 50 C65 45 70 38 75 40 C77 41 77 45 75 45' fill='none' stroke='%23cd7f32' stroke-width='2.5' stroke-linecap='round'/><path d='M60 95 C50 95 40 85 40 75 C40 68 48 65 52 70 C55 75 50 82 45 80 C43 79 43 75 45 75' fill='none' stroke='%23cd7f32' stroke-width='2.5' stroke-linecap='round'/><path d='M60 95 C70 95 80 85 80 75 C80 68 72 65 68 70 C65 75 70 82 75 80 C77 79 77 75 75 75' fill='none' stroke='%23cd7f32' stroke-width='2.5' stroke-linecap='round'/><path d='M0 60 C15 55 25 45 25 35 C25 25 15 20 10 25 M0 60 C15 65 25 75 25 85 C25 95 15 100 10 95' fill='none' stroke='%23e5c158' stroke-width='2'/><path d='M120 60 C105 55 95 45 95 35 C95 25 105 20 110 25 M120 60 C105 65 95 75 95 85 C95 95 105 100 110 95' fill='none' stroke='%23e5c158' stroke-width='2'/></svg>`
   },
   {
     id: "ala-kiyiz",
@@ -16,7 +16,7 @@ const wallpaperPatterns = [
     region: "Issiq-Ko'l",
     regionId: "path-issyk-kul",
     desc: "Ala-kiyiz — bosilgan kigizdan tayyorlanadigan gilam bo'lib, uning naqshlari erkinroq va organik oqimga ega. Ushbu naqsh tabiatdagi shamol va suv to'lqinlarining harakatini ifodalaydi va zamonaviy yashash xonalari uchun ajoyib dinamika beradi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%232c1c11'/><path d='M0 50 Q 25 20, 50 50 T 100 50 M0 30 Q 25 0, 50 30 T 100 30 M0 70 Q 25 40, 50 70 T 100 70' fill='none' stroke='%23e5c158' stroke-width='1.5' stroke-dasharray='4, 4'/><path d='M25 50 C 25 35, 35 25, 50 25 C 65 25, 75 35, 75 50' fill='none' stroke='%23cd7f32' stroke-width='2'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><rect width='160' height='160' fill='%2322150c'/><path d='M-20 40 Q 20 10, 60 40 T 140 40 T 220 40 L220 180 L-20 180 Z' fill='%232c1c11'/><path d='M-20 100 Q 20 70, 60 100 T 140 100 T 220 100 L220 180 L-20 180 Z' fill='%23362215'/><path d='M0 60 Q 40 20, 80 60 T 160 60' fill='none' stroke='%23e5c158' stroke-width='2' stroke-opacity='0.6'/><path d='M0 120 Q 40 80, 80 120 T 160 120' fill='none' stroke='%23cd7f32' stroke-width='2' stroke-opacity='0.4'/><path d='M40 60 C30 50, 20 60, 30 70 C40 80, 50 60, 40 50 M120 120 C110 110, 100 120, 110 130 C120 140, 130 120, 120 110' fill='none' stroke='%23e5c158' stroke-width='1.5'/></svg>`
   },
   {
     id: "kurak-mosaic",
@@ -24,7 +24,7 @@ const wallpaperPatterns = [
     region: "O'sh",
     regionId: "path-osh",
     desc: "Quroq — parchalar yig'indisidan iborat mozaik naqsh bo'lib, oila birligi, farovonlik va uydagi tinchlik-totuvlik ramzidir. Har bir uchburchak va kvadrat elementlar hayot yo'llarining birlashishini bildiradi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><rect width='60' height='60' fill='%231e120a'/><polygon points='0,0 30,0 0,30' fill='%23cd7f32' fill-opacity='0.4'/><polygon points='30,0 60,0 60,30' fill='%23e5c158' fill-opacity='0.2'/><polygon points='60,30 60,60 30,60' fill='%23cd7f32' fill-opacity='0.4'/><polygon points='30,60 0,60 0,30' fill='%23e5c158' fill-opacity='0.2'/><polygon points='30,10 50,30 30,50 10,30' fill='none' stroke='%23e5c158' stroke-width='1.5'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23190e06'/><polygon points='0,0 50,50 0,100' fill='%232a180e'/><polygon points='100,0 50,50 100,100' fill='%232a180e'/><polygon points='0,0 50,50 100,0' fill='%23362013'/><polygon points='0,100 50,50 100,100' fill='%23362013'/><polygon points='50,20 80,50 50,80 20,50' fill='%23cd7f32' fill-opacity='0.25' stroke='%23e5c158' stroke-width='1'/><polygon points='50,30 70,50 50,70 30,50' fill='%23e5c158' fill-opacity='0.3'/><path d='M0 0 L100 100 M100 0 L0 100 M50 20 L50 80 M20 50 L80 50' stroke='%23f5ece3' stroke-width='1.5' stroke-dasharray='3, 4' stroke-opacity='0.35'/></svg>`
   },
   {
     id: "kochkor-muiz",
@@ -32,7 +32,7 @@ const wallpaperPatterns = [
     region: "Talas",
     regionId: "path-talas",
     desc: "Qochqor-muiz qirg'iz naqshlarining eng qadimiy elementlaridan biridir. U qo'chqor shoxlarini ifodalab, kuch-qudrat, jasorat, boylik va mo'l-ko'lchilik ramzi hisoblanadi. Kabinet yoki ish xonalari uchun juda mos.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><rect width='80' height='80' fill='%2322150c'/><path d='M40 75 V45 C40 30, 20 20, 20 35 C20 45, 35 45, 35 35 M40 75 V45 C40 30, 60 20, 60 35 C60 45, 45 45, 45 35' fill='none' stroke='%23e5c158' stroke-width='3' stroke-linecap='round'/><path d='M40 5 V35 C40 50, 20 60, 20 45 C20 35, 35 35, 35 45 M40 5 V35 C40 50, 60 60, 60 45 C60 35, 45 35, 45 45' fill='none' stroke='%23cd7f32' stroke-width='2' stroke-linecap='round'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><rect width='120' height='120' fill='%2322150c'/><path d='M0 60 H120 M60 0 V120' stroke='%23321f12' stroke-width='1'/><g transform='translate(60,60)'><path d='M0 0 Q -30 -10 -40 -35 C -50 -60 -20 -70 -10 -55 C 0 -40 -20 -35 -25 -45' fill='none' stroke='%23e5c158' stroke-width='3.5' stroke-linecap='round'/><path d='M0 0 Q 30 -10 40 -35 C 50 -60 20 -70 10 -55 C 0 -40 20 -35 25 -45' fill='none' stroke='%23e5c158' stroke-width='3.5' stroke-linecap='round'/><path d='M0 0 Q -30 10 -40 35 C -50 60 -20 70 -10 55 C 0 40 -20 35 -25 45' fill='none' stroke='%23cd7f32' stroke-width='2.5' stroke-linecap='round'/><path d='M0 0 Q 30 10 40 35 C 50 60 20 70 10 55 C 0 40 20 35 25 45' fill='none' stroke='%23cd7f32' stroke-width='2.5' stroke-linecap='round'/></g><circle cx='60' cy='60' r='6' fill='%23f5ece3'/></svg>`
   },
   {
     id: "kyal-dream",
@@ -40,7 +40,7 @@ const wallpaperPatterns = [
     region: "Jalolobod",
     regionId: "path-jalal-abad",
     desc: "Xiyol — shashqa va o'simlik barglarining silliq, nafis chiziqlari bilan chizilgan naqshdir. U erkin hayot, ijodiy tafakkur va cheksiz tasavvurni anglatadi. Yotoqxonalarga mayinlik va xotirjamlik bag'ishlaydi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'><rect width='90' height='90' fill='%23190f07'/><path d='M0 45 C 15 15, 30 15, 45 45 C 60 75, 75 75, 90 45' fill='none' stroke='%23e5c158' stroke-width='1.5'/><path d='M45 45 C 45 25, 60 20, 65 35 C 70 50, 55 55, 45 45' fill='none' stroke='%23cd7f32' stroke-width='2'/><path d='M45 45 C 45 65, 30 70, 25 55 C 20 40, 35 35, 45 45' fill='none' stroke='%23f5ece3' stroke-width='1' stroke-opacity='0.5'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'><rect width='140' height='140' fill='%23190f07'/><path d='M0 70 Q 35 35, 70 70 T 140 70' fill='none' stroke='%233d2619' stroke-width='2'/><path d='M0 70 C 20 40, 50 40, 70 70' fill='none' stroke='%23e5c158' stroke-width='2.5' stroke-linecap='round'/><path d='M35 52 C45 40, 55 45, 50 60 C40 65, 30 60, 35 52 Z' fill='%23cd7f32' fill-opacity='0.4' stroke='%23e5c158' stroke-width='1.5'/><path d='M105 88 C115 76, 125 81, 120 96 C110 101, 100 96, 105 88 Z' fill='%23cd7f32' fill-opacity='0.4' stroke='%23e5c158' stroke-width='1.5'/><path d='M70 70 C 70 90, 85 100, 95 95 C 105 90, 95 75, 85 85' fill='none' stroke='%23cd7f32' stroke-width='2'/><path d='M70 70 C 70 50, 55 40, 45 45 C 35 50, 45 65, 55 55' fill='none' stroke='%23f5ece3' stroke-width='1.5' stroke-opacity='0.6'/></svg>`
   },
   {
     id: "baka-fertility",
@@ -48,7 +48,7 @@ const wallpaperPatterns = [
     region: "Botken",
     regionId: "path-batken",
     desc: "Baqa (baqa) — qadimgi animistik qarashlarda suv, unumdorlik, oilaviy baxt va ayolning homiy ramzi bo'lgan. Smetrik joylashgan ushbu naqsh geometrik barqarorligi bilan interyerga tartib va muvozanat olib kiradi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 70 70'><rect width='70' height='70' fill='%232a1b10'/><path d='M35 15 L25 25 H45 Z M35 25 V45 M25 35 H45 M25 25 L15 35 L20 45 M45 25 L55 35 L50 45 M25 45 L15 55 M45 45 L55 55' fill='none' stroke='%23e5c158' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/><circle cx='35' cy='12' r='3' fill='%23cd7f32'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2324180e'/><g transform='translate(50,50)'><path d='M0 -30 L-12 -15 H12 Z' fill='%23e5c158'/><path d='M0 -15 V20' stroke='%23e5c158' stroke-width='3'/><path d='M-12 -5 H12 M-12 -5 C -25 -5, -30 -15, -25 -25 M12 -5 C 25 -5, 30 -15, 25 -25' fill='none' stroke='%23e5c158' stroke-width='3' stroke-linecap='round'/><path d='M-12 15 H12 M-12 15 C -25 15, -30 25, -20 35 M12 15 C 25 15, 30 25, 20 35' fill='none' stroke='%23cd7f32' stroke-width='3.5' stroke-linecap='round'/><circle cx='-6' cy='-33' r='2' fill='%23f5ece3'/><circle cx='6' cy='-33' r='2' fill='%23f5ece3'/><polygon points='-40,0 -35,-5 -30,0 -35,5' fill='none' stroke='%23cd7f32' stroke-width='1'/><polygon points='40,0 45,-5 50,0 45,5' fill='none' stroke='%23cd7f32' stroke-width='1'/></g></svg>`
   },
   {
     id: "tumar-protection",
@@ -56,7 +56,7 @@ const wallpaperPatterns = [
     region: "Chuy",
     regionId: "path-chuy",
     desc: "Tumar — tumor shaklidagi uchburchak naqsh bo'lib, uyingizni salbiy energiyalardan himoyalovchi tumor vazifasini o'taydi. Murakkab geometrik ramkaga solingan tumar naqshlari zamonaviy loft interyerlar uchun ajoyib tanlovdir.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><rect width='60' height='60' fill='%23201309'/><polygon points='30,5 55,30 30,55 5,30' fill='none' stroke='%23e5c158' stroke-width='2'/><polygon points='30,15 45,30 30,45 15,30' fill='%23cd7f32' fill-opacity='0.3'/><circle cx='30' cy='30' r='4' fill='%23f5ece3'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><rect width='120' height='120' fill='%23190e06'/><path d='M60 0 L120 60 L60 120 L0 60 Z' fill='none' stroke='%23321f12' stroke-width='1.5'/><g transform='translate(60,60)'><polygon points='0,-45 -40,15 40,15' fill='%23362013' stroke='%23e5c158' stroke-width='2.5'/><polygon points='0,-30 -25,10 25,10' fill='%23cd7f32' fill-opacity='0.3' stroke='%23cd7f32' stroke-width='1.5'/><circle cx='0' cy='-5' r='4' fill='%23f5ece3'/><path d='M-10 25 H10 L0 35 Z' fill='%23e5c158'/></g><polygon points='0,0 10,0 0,10' fill='%23cd7f32'/><polygon points='120,0 110,0 120,10' fill='%23cd7f32'/><polygon points='0,120 10,120 0,110' fill='%23cd7f32'/><polygon points='120,120 110,120 120,110' fill='%23cd7f32'/></svg>`
   },
   {
     id: "kerme-too",
@@ -64,7 +64,7 @@ const wallpaperPatterns = [
     region: "O'sh",
     regionId: "path-osh",
     desc: "Kerme-too naqshi Osmon-O'sh tizmasi va muqaddas Sulaymon tog'larining siluetlarini ifodalaydi. U bardoshlilik, yuksaklikka intilish va maqsad sari sabot ramzidir. Keng zallar uchun kenglik hissini oshiradi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='100' height='80' viewBox='0 0 100 80'><rect width='100' height='80' fill='%23190e06'/><path d='M0 40 L30 15 L60 45 L80 30 L100 50' fill='none' stroke='%23e5c158' stroke-width='2'/><path d='M0 60 L20 40 L50 70 L75 50 L100 75' fill='none' stroke='%23cd7f32' stroke-width='1.5'/><circle cx='50' cy='20' r='3' fill='%23f5ece3' opacity='0.7'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='180' height='120' viewBox='0 0 180 120'><rect width='180' height='120' fill='%23120b06'/><path d='M0 80 L35 45 L70 85 L115 35 L150 75 L180 50 L180 120 L0 120 Z' fill='%2322150c' stroke='%233c271a' stroke-width='1.5'/><path d='M0 100 L45 65 L90 105 L130 55 L180 100 L180 120 L0 120 Z' fill='%232e1d12' stroke='%23cd7f32' stroke-width='1.5' stroke-opacity='0.8'/><path d='M0 115 L25 90 L60 120 L105 85 L145 115 L180 90 L180 120 L0 120 Z' fill='none' stroke='%23e5c158' stroke-width='2' stroke-linecap='round'/><circle cx='30' cy='25' r='1.5' fill='%23f5ece3' opacity='0.7'/><circle cx='90' cy='20' r='2' fill='%23e5c158' opacity='0.9'/><circle cx='140' cy='30' r='1' fill='%23f5ece3' opacity='0.5'/></svg>`
   },
   {
     id: "jyldyz-star",
@@ -72,7 +72,7 @@ const wallpaperPatterns = [
     region: "Narin",
     regionId: "path-naryn",
     desc: "Yulduz — sivilizatsiyaning yorug'lik manbai, orzu va maqsadlar sari ko'rsatgich yulduzi hisoblanadi. Uning sakkiz burchakli simmetriyasi uyingiz shifti va yuqori zonalari bezagi uchun boy tarixiy ruh bag'ishlaydi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><rect width='80' height='80' fill='%2322150c'/><path d='M40 10 L48 32 H70 L52 45 L60 68 L40 54 L20 68 L28 45 L10 32 H32 Z' fill='none' stroke='%23e5c158' stroke-width='2'/><circle cx='40' cy='40' r='6' fill='%23cd7f32'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231d120a'/><path d='M50 0 V100 M0 50 H100 M0 0 L100 100 M100 0 L0 100' stroke='%232c1b10' stroke-width='1'/><g transform='translate(50,50)'><path d='M0 -40 L10 -15 L35 -25 L20 0 L45 10 L15 15 L25 40 L0 25 L-25 40 L-15 15 L-45 10 L-20 0 L-35 -25 L-10 -15 Z' fill='%232a180e' stroke='%23e5c158' stroke-width='2' stroke-linejoin='round'/><circle cx='0' cy='0' r='10' fill='none' stroke='%23cd7f32' stroke-width='1.5'/><polygon points='0,-8 6,0 0,8 -6,0' fill='%23f5ece3'/></g></svg>`
   },
   {
     id: "boralmush-swirl",
@@ -80,7 +80,7 @@ const wallpaperPatterns = [
     region: "Issiq-Ko'l",
     regionId: "path-issyk-kul",
     desc: "Boralmush — tabiat qudrati va harakatini ifodalovchi quyun naqshidir. Doimiy aylanma harakat hayotning davomiyligi, davriylik va yangilanishni anglatadi. Dinamik interyer dizaynini xush ko'ruvchilar uchun mos keladi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><rect width='80' height='80' fill='%231d1108'/><path d='M40 40 C 40 20, 20 20, 20 40 C 20 60, 40 60, 40 40 C 40 60, 60 60, 60 40 C 60 20, 40 20, 40 40' fill='none' stroke='%23e5c158' stroke-width='2.5'/><path d='M40 40 C 30 30, 30 50, 40 40 C 50 30, 50 50, 40 40' fill='none' stroke='%23cd7f32' stroke-width='1.5'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><rect width='120' height='120' fill='%23190e06'/><g transform='translate(60,60)'><circle cx='0' cy='0' r='12' fill='none' stroke='%23cd7f32' stroke-width='2.5'/><path d='M0 -12 C-15 -12, -25 -25, -20 -40 C-15 -55, 5 -45, 0 -30' fill='none' stroke='%23e5c158' stroke-width='3' stroke-linecap='round'/><path d='M0 12 C15 12, 25 25, 20 40 C15 55, -5 45, 0 30' fill='none' stroke='%23e5c158' stroke-width='3' stroke-linecap='round'/><path d='M-12 0 C-12 15, -25 25, -40 20 C-55 15, -45 -5, -30 0' fill='none' stroke='%23cd7f32' stroke-width='2.5' stroke-linecap='round'/><path d='M12 0 C12 -15, 25 -25, 40 -20 C55 -15, 45 5, 30 0' fill='none' stroke='%23cd7f32' stroke-width='2.5' stroke-linecap='round'/><circle cx='0' cy='0' r='4' fill='%23f5ece3'/></g></svg>`
   },
   {
     id: "altyn-oymo",
@@ -88,7 +88,7 @@ const wallpaperPatterns = [
     region: "Chuy",
     regionId: "path-chuy",
     desc: "Altyn oymo — an'anaviy zargarlik buyumlarining nozik o'yma naqshlaridan ilhomlangan. Oltin hoshiyali bu doiraviy naqsh farovonlik, boylik va mukammallik ramzi bo'lib, mehmonxonalarni dabdabali ko'rsatadi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2328190e'/><circle cx='50' cy='50' r='35' fill='none' stroke='%23e5c158' stroke-width='2'/><circle cx='50' cy='50' r='25' fill='none' stroke='%23cd7f32' stroke-dasharray='6,4'/><path d='M50 15 L50 85 M15 50 L85 50' stroke='%23e5c158' stroke-width='1'/><circle cx='50' cy='50' r='5' fill='%23f5ece3'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'><rect width='140' height='140' fill='%2322150c'/><circle cx='70' cy='70' r='55' fill='none' stroke='%23e5c158' stroke-width='3'/><circle cx='70' cy='70' r='45' fill='none' stroke='%23cd7f32' stroke-width='1.5' stroke-dasharray='5, 4'/><g transform='translate(70,70)'><path d='M0 -35 C -15 -35, -20 -15, 0 -15 C 20 -15, 15 -35, 0 -35 Z' fill='%233a2315' stroke='%23e5c158' stroke-width='1.5'/><path d='M0 35 C -15 35, -20 15, 0 15 C 20 15, 15 35, 0 35 Z' fill='%233a2315' stroke='%23e5c158' stroke-width='1.5'/><path d='M-35 0 C -35 -15, -15 -20, -15 0 C -15 20, -35 15, -35 0 Z' fill='%233a2315' stroke='%23cd7f32' stroke-width='1.5'/><path d='M35 0 C 35 -15, 15 -20, 15 0 C 15 20, 35 15, 35 0 Z' fill='%233a2315' stroke='%23cd7f32' stroke-width='1.5'/><circle cx='0' cy='0' r='5' fill='%23f5ece3'/></g><circle cx='0' cy='70' r='55' fill='none' stroke='%23e5c158' stroke-width='0.75' opacity='0.3'/><circle cx='140' cy='70' r='55' fill='none' stroke='%23e5c158' stroke-width='0.75' opacity='0.3'/></svg>`
   },
   {
     id: "kosh-muiz",
@@ -96,7 +96,7 @@ const wallpaperPatterns = [
     region: "Talas",
     regionId: "path-talas",
     desc: "Kosh-muiz — ikki qarama-qarshi joylashgan shox shakli bo'lib, hamkorlik, sherikchilik, oila va nikoh mustahkamligi timsolidir. Ushbu naqsh simmetriyasi uyingizga tartib, osoyishtalik va doimiy muvozanat olib keladi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><rect width='80' height='80' fill='%231f130b'/><path d='M10 40 C10 20, 30 20, 35 35 C38 45, 25 45, 25 40 M70 40 C70 20, 50 20, 45 35 C42 45, 55 45, 55 40' fill='none' stroke='%23e5c158' stroke-width='3' stroke-linecap='round'/><line x1='40' y1='10' x2='40' y2='70' stroke='%23cd7f32' stroke-width='1.5'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><rect width='120' height='120' fill='%23190f07'/><rect x='0' y='0' width='60' height='60' fill='%2322150c'/><rect x='60' y='60' width='60' height='60' fill='%2322150c'/><g transform='translate(30,30)'><path d='M-15 0 C-15 -15, -5 -20, 0 -5 C3 10, -10 10, -10 0 M15 0 C15 -15, 5 -20, 0 -5 C-3 10, 10 10, 10 0' fill='none' stroke='%23e5c158' stroke-width='2.5' stroke-linecap='round'/></g><g transform='translate(90,30)'><path d='M-15 0 C-15 -15, -5 -20, 0 -5 C3 10, -10 10, -10 0 M15 0 C15 -15, 5 -20, 0 -5 C-3 10, 10 10, 10 0' fill='none' stroke='%23cd7f32' stroke-width='2.5' stroke-linecap='round'/></g><g transform='translate(30,90)'><path d='M-15 0 C-15 -15, -5 -20, 0 -5 C3 10, -10 10, -10 0 M15 0 C15 -15, 5 -20, 0 -5 C-3 10, 10 10, 10 0' fill='none' stroke='%23cd7f32' stroke-width='2.5' stroke-linecap='round'/></g><g transform='translate(90,90)'><path d='M-15 0 C-15 -15, -5 -20, 0 -5 C3 10, -10 10, -10 0 M15 0 C15 -15, 5 -20, 0 -5 C-3 10, 10 10, 10 0' fill='none' stroke='%23e5c158' stroke-width='2.5' stroke-linecap='round'/></g></svg>`
   },
   {
     id: "uluu-too",
@@ -104,7 +104,7 @@ const wallpaperPatterns = [
     region: "Botken",
     regionId: "path-batken",
     desc: "Uluu-too — Tangri tog'larining ulug'vor cho'qqilarini ifodalovchi qatlamli geometrik uchburchaklardir. Bu naqsh bardoshlilik, yuksalish va tog'lardek mag'rur munosabatlarni tasvirlaydi. Keng interyerlar uchun mukammal mos keladi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='60' viewBox='0 0 80 60'><rect width='80' height='60' fill='%23190e06'/><polygon points='40,10 75,50 5,50' fill='none' stroke='%23e5c158' stroke-width='2'/><polygon points='40,25 60,50 20,50' fill='%23cd7f32' fill-opacity='0.25' stroke='%23cd7f32' stroke-width='1'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='140' height='100' viewBox='0 0 140 100'><rect width='140' height='100' fill='%231a0e05'/><polygon points='70,10 135,90 5,90' fill='%2328170d' stroke='%23cd7f32' stroke-width='2'/><polygon points='70,30 115,85 25,85' fill='%23362013' stroke='%23e5c158' stroke-width='2'/><polygon points='70,50 95,80 45,80' fill='%231a0e05' stroke='%23f5ece3' stroke-width='1.5' stroke-opacity='0.7'/><path d='M0 90 L10 80 L20 90 M120 90 L130 80 L140 90' stroke='%23e5c158' stroke-width='1.5'/></svg>`
   },
   {
     id: "saimaluu-tash",
@@ -112,7 +112,7 @@ const wallpaperPatterns = [
     region: "Jalolobod",
     regionId: "path-jalal-abad",
     desc: "Saymali-tosh — miloddan avvalgi asrlarda tog' toshlariga o'yilgan petrogliflar naqshidir. Ular ibtidoiy odamlar, tog' echkilari va quyosh shaklidan iborat. Uyingizga qadimiy sirlilik va chuqur tarixiy muhit olib kiradi.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'><rect width='90' height='90' fill='%2323160d'/><circle cx='45' cy='45' r='12' fill='none' stroke='%23e5c158' stroke-width='2'/><path d='M45 25 V65 M25 45 H65' stroke='%23cd7f32' stroke-width='1.5'/><path d='M25 25 L35 35 M65 25 L55 35 M25 65 L35 55 M65 65 L55 55' stroke='%23f5ece3' stroke-width='1' stroke-opacity='0.5'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><rect width='160' height='160' fill='%231e130a'/><path d='M0 20 C40 10, 120 30, 160 10 L160 160 L0 160 Z' fill='%2325170d'/><path d='M0 80 C60 90, 90 70, 160 90 L160 160 L0 160 Z' fill='%232a1a0f'/><g transform='translate(40,40) scale(0.7)'><path d='M20 10 Q -10 -15, -15 -35 M20 10 Q -5 -5, -8 -25' fill='none' stroke='%23e5c158' stroke-width='3.5' stroke-linecap='round'/><path d='M20 10 L5 25 H-30 L-35 45 M-30 25 L-25 45 M5 25 L10 45' fill='none' stroke='%23e5c158' stroke-width='4' stroke-linecap='round'/><path d='M20 10 L25 18 M20 10 L28 6' stroke='%23e5c158' stroke-width='3' stroke-linecap='round'/></g><g transform='translate(120,110) scale(0.6)'><circle cx='0' cy='0' r='15' fill='none' stroke='%23cd7f32' stroke-width='3'/><path d='M0 -15 V-25 M0 15 V25 M-15 0 H-25 M15 0 H25 M-10 -10 L-18 -18 M10 10 L18 18 M-10 10 L-18 18 M10 -10 L18 -18' stroke='%23cd7f32' stroke-width='2.5' stroke-linecap='round'/></g><path d='M0 0 L15 15 M160 0 L145 15 M0 160 L20 140' stroke='%23321f12' stroke-width='1.5' opacity='0.5'/></svg>`
   },
   {
     id: "ak-keme",
@@ -120,7 +120,7 @@ const wallpaperPatterns = [
     region: "Issiq-Ko'l",
     regionId: "path-issyk-kul",
     desc: "Oq kema — qadimgi ko'l va undagi to'lqinlar hamda mashhur Chingiz Aytmatov qissasidagi umid kemasining to'lqinli tasviridir. Bu naqsh yorug' kelajak, ezgu orzular va shaffoflik ramzidir.",
-    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='100' height='60' viewBox='0 0 100 60'><rect width='100' height='60' fill='%231a0f08'/><path d='M0 30 Q12 15, 25 30 T50 30 T75 30 T100 30' fill='none' stroke='%23f5ece3' stroke-width='2' stroke-opacity='0.8'/><path d='M0 45 Q12 30, 25 45 T50 45 T75 45 T100 45' fill='none' stroke='%23e5c158' stroke-width='1.5'/></svg>`
+    svgPattern: `<svg xmlns='http://www.w3.org/2000/svg' width='160' height='100' viewBox='0 0 160 100'><rect width='160' height='100' fill='%23190f08'/><path d='M0 40 Q20 25, 40 40 T80 40 T120 40 T160 40' fill='none' stroke='%23cd7f32' stroke-width='2'/><path d='M0 60 Q20 45, 40 60 T80 60 T120 60 T160 60' fill='none' stroke='%23e5c158' stroke-width='2.5'/><path d='M0 80 Q20 65, 40 80 T80 80 T120 80 T160 80' fill='none' stroke='%23f5ece3' stroke-width='1.5' stroke-opacity='0.4'/><g transform='translate(30, 15) scale(0.8)'><polygon points='15,0 30,25 0,25' fill='%23f5ece3' fill-opacity='0.9'/><path d='M0 27 H30 L25 33 H5 Z' fill='%23e5c158'/></g><g transform='translate(110, 15) scale(0.8)'><polygon points='15,0 30,25 0,25' fill='%23f5ece3' fill-opacity='0.9'/><path d='M0 27 H30 L25 33 H5 Z' fill='%23cd7f32'/></g></svg>`
   }
 ];
 
