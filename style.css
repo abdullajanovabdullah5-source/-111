@@ -21,7 +21,18 @@
   --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   --shadow-gold: 0 8px 32px rgba(229, 193, 88, 0.08);
   --shadow-dark: 0 16px 40px rgba(0, 0, 0, 0.5);
-  --border-glass: 1px solid rgba(245, 236, 227, 0.08);
+}
+
+/* Light Theme Variables Override */
+body.light-theme {
+  --color-bg-deep: #faf7f2;      /* Elegant soft off-white */
+  --color-bg-card: #ffffff;      /* Clean white */
+  --color-bg-hover: #f5efeb;     /* Light cream hover */
+  --color-text-main: #27160c;    /* Dark brown/charcoal text */
+  --color-text-muted: #6e5b4f;   /* Muted warm grey */
+  --border-glass: 1px solid rgba(39, 22, 12, 0.08);
+  --shadow-dark: 0 16px 40px rgba(39, 22, 12, 0.06);
+  --shadow-gold: 0 8px 32px rgba(229, 193, 88, 0.12);
 }
 
 /* Reset */
@@ -1065,3 +1076,93 @@ footer {
     padding: 30px 20px;
   }
 }
+
+/* Theme Toggle Button & Controls */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 1001;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: var(--border-glass);
+  color: var(--color-text-main);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(245, 236, 227, 0.08);
+  border-color: var(--color-accent-gold);
+  color: var(--color-accent-gold);
+}
+
+/* Light Theme Styling Overrides */
+body.light-theme header {
+  background: rgba(250, 247, 242, 0.85);
+  border-bottom: 1px solid rgba(39, 22, 12, 0.08);
+}
+
+body.light-theme header.scrolled {
+  background: rgba(250, 247, 242, 0.95);
+}
+
+body.light-theme .theme-toggle-btn:hover {
+  background: rgba(39, 22, 12, 0.05);
+}
+
+body.light-theme .region-path {
+  fill: #ebdccb;
+  stroke: rgba(39, 22, 12, 0.15);
+}
+
+body.light-theme .region-path:hover {
+  fill: #d5bda6;
+}
+
+body.light-theme .region-path.active {
+  fill: var(--color-accent-bronze);
+}
+
+body.light-theme .form-control {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(39, 22, 12, 0.15);
+  color: #27160c;
+}
+
+body.light-theme .form-control:focus {
+  border-color: var(--color-accent-gold);
+}
+
+body.light-theme .nav-links {
+  background-color: rgba(250, 247, 242, 0.98);
+}
+
+body.light-theme .social-btn {
+  background: rgba(39, 22, 12, 0.02);
+}
+
+body.light-theme .map-pin-circle {
+  stroke: #faf7f2;
+}
+
+body.light-theme .map-visual-wrapper {
+  background: #ffffff;
+}
+
+body.light-theme .map-pattern-highlight {
+  background: rgba(39, 22, 12, 0.02);
+}
+
+body.light-theme .map-pattern-highlight:hover {
+  background: rgba(229, 193, 88, 0.08);
+}
+

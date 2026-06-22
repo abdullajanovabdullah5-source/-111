@@ -215,6 +215,38 @@ document.querySelectorAll(".nav-links a").forEach(link => {
   });
 });
 
+// Theme Toggle Logic
+const themeToggleBtn = document.getElementById("themeToggle");
+const sunIcon = themeToggleBtn.querySelector(".sun-icon");
+const moonIcon = themeToggleBtn.querySelector(".moon-icon");
+
+themeToggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-theme");
+  currentTheme = document.body.classList.contains("light-theme") ? "light" : "dark";
+  
+  // Toggle icons
+  if (currentTheme === "light") {
+    sunIcon.style.display = "none";
+    moonIcon.style.display = "block";
+  } else {
+    sunIcon.style.display = "block";
+    moonIcon.style.display = "none";
+  }
+  
+  // Re-build grid and re-apply active wallpaper dynamically
+  buildGalleryGrid();
+  applyWallpaper(activePattern);
+  
+  // Update map highlight preview
+  const mapHighlightPreview = document.getElementById("mapHighlightPreview");
+  if (mapHighlightPreview && mapHighlightCard.dataset.patternId) {
+    const pattern = wallpaperPatterns.find(p => p.id === mapHighlightCard.dataset.patternId);
+    if (pattern) {
+      mapHighlightPreview.style.backgroundImage = getSvgDataUrl(pattern.svgPattern);
+    }
+  }
+});
+
 // Scroll Effects (Header Glassmorphism)
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
@@ -238,10 +270,56 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Helper: Convert Raw SVG into a safe CSS data URI
+// Global Theme State
+let currentTheme = "dark";
+
+// Helper: Adapt SVG color system dynamically for Light/Cream Theme
+function adaptSvgForTheme(svgString, theme) {
+  if (theme === 'light') {
+    let result = svgString
+      .replace(/fill='%23190e06'/g, "fill='%23faf7f2'")
+      .replace(/fill='%2322150c'/g, "fill='%23faf7f2'")
+      .replace(/fill='%2324180e'/g, "fill='%23faf7f2'")
+      .replace(/fill='%231e130a'/g, "fill='%23faf7f2'")
+      .replace(/fill='%231a0e05'/g, "fill='%23faf7f2'")
+      .replace(/fill='%23190f08'/g, "fill='%23faf7f2'")
+      .replace(/fill='%2325160c'/g, "fill='%23faf7f2'")
+      .replace(/fill='%232c1c11'/g, "fill='%23faf7f2'")
+      .replace(/fill='%231e120a'/g, "fill='%23faf7f2'")
+      .replace(/fill='%23190f07'/g, "fill='%23faf7f2'")
+      .replace(/fill='%232a1b10'/g, "fill='%23faf7f2'")
+      .replace(/fill='%23201309'/g, "fill='%23faf7f2'")
+      .replace(/fill='%23120b06'/g, "fill='%23faf7f2'")
+      .replace(/fill='%231d120a'/g, "fill='%23faf7f2'")
+      .replace(/fill='%2328190e'/g, "fill='%23faf7f2'")
+      .replace(/fill='%231f130b'/g, "fill='%23faf7f2'")
+      .replace(/fill='%2323160d'/g, "fill='%23faf7f2'")
+      .replace(/fill='%232c1b10'/g, "fill='%23faf7f2'")
+      .replace(/fill='%233a1e12'/g, "fill='%23f5efeb'")
+      .replace(/fill='%2328170d'/g, "fill='%23f5efeb'")
+      .replace(/fill='%23362013'/g, "fill='%23ebdccb'")
+      .replace(/fill='%233a2315'/g, "fill='%23ebdccb'")
+      .replace(/fill='%231a0e08'/g, "fill='%23faf7f2'")
+      .replace(/fill='%2325170d'/g, "fill='%23faf7f2'")
+      .replace(/fill='%232a1a0f'/g, "fill='%23faf7f2'")
+      .replace(/fill='%232e1d12'/g, "fill='%23ebdccb'")
+      .replace(/fill='%232d1d13'/g, "fill='%23faf7f2'")
+      .replace(/fill='%233c271a'/g, "fill='%23faf7f2'")
+      .replace(/fill='%232d1c10'/g, "fill='%23faf7f2'")
+      .replace(/fill='%232a180e'/g, "fill='%23f5efeb'");
+
+    result = result.replace(/stroke='%23f5ece3'/g, "stroke='%2327160c'")
+                   .replace(/fill='%23f5ece3'/g, "fill='%2327160c'");
+    return result;
+  }
+  return svgString;
+}
+
+// Helper: Convert Raw SVG into a safe CSS data URI (Base64 encoded)
 function getSvgDataUrl(svgString) {
   const cleanSvg = svgString.trim();
-  const base64 = btoa(unescape(encodeURIComponent(cleanSvg)));
+  const themedSvg = adaptSvgForTheme(cleanSvg, currentTheme);
+  const base64 = btoa(unescape(encodeURIComponent(themedSvg)));
   return `url("data:image/svg+xml;base64,${base64}")`;
 }
 
