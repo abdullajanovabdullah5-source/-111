@@ -220,6 +220,10 @@ const themeToggleBtn = document.getElementById("themeToggle");
 const sunIcon = themeToggleBtn.querySelector(".sun-icon");
 const moonIcon = themeToggleBtn.querySelector(".moon-icon");
 
+// Initialize theme icon display state (Light Theme is default)
+sunIcon.style.display = "none";
+moonIcon.style.display = "block";
+
 themeToggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("light-theme");
   currentTheme = document.body.classList.contains("light-theme") ? "light" : "dark";
@@ -271,7 +275,7 @@ window.addEventListener("scroll", () => {
 });
 
 // Global Theme State
-let currentTheme = "dark";
+let currentTheme = "light";
 
 // Helper: Adapt SVG color system dynamically for Light/Cream Theme
 function adaptSvgForTheme(svgString, theme) {
